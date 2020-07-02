@@ -1,0 +1,58 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</head>
+<body>
+
+<h2 id="advancedsearchtitle">Advanced Search</h2>
+
+<form action="search.php" id="advancedsearchform" method="get">
+<input name="mode" type="hidden" value="advanced"/>
+
+<table>
+<tr>
+<th><p>Search within:</p></th>
+<td><p><select name="field">
+<option value="">entire finding aids</option>
+<option value="persname">names of people only</option>
+<option value="subject">subjects only</option>
+<option value="unittitle">headings only</option>
+<!--<option value="dsc">Inventories</option>-->
+</select></p></td>
+</tr>
+
+<tr>
+<th><p>For the following text:</p></th>
+<td><p><input name="q" type="text"/></p></td>
+</tr>
+
+<tr>
+<th></th>
+<td><p><input name="exactphrase" style="display: inline; width: auto;" type="checkbox" /> search this exact phrase</p></td>
+</tr>
+
+<tr>
+<th><p>Limit your search to one or more Institutions:</p></th>
+<td><p><fieldset>
+		<input checked="checked" class="checkbox" name="collection" type="checkbox" value="institution/chicago defender"/> Chicago Defender<br/>
+		<input checked="checked" class="checkbox" name="collection" type="checkbox" value="institution/dusable"/> DuSable Museum of African American History<br/>
+		<input checked="checked" class="checkbox" name="collection" type="checkbox" value="institution/Northwestern University"/> Northwestern University<br/>
+		<input checked="checked" class="checkbox" name="collection" type="checkbox" value="institution/sscac"/> South Side Community Art Center<br/>
+		<input checked="checked" class="checkbox" name="collection" type="checkbox" value="institution/University of Chicago"/> University of Chicago Library<br/>
+		<input checked="checked" class="checkbox" name="collection" type="checkbox" value="institution/vivian g harsh"/> Chicago Public Library, Carter G. Woodson Regional Library, Vivian G. Harsh Research Collection of Afro-American History and Literature
+</fieldset></p></td>
+</tr>
+
+<tr>
+<th></th>
+<td><p><input type="submit" value="Search"/> or <a href="#"
+onclick="parent.$.fancybox.close(); return false;">close this window</a>.</p></td>
+</tr>
+</table>
+
+</form>
+
+</body>
+</html>

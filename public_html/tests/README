@@ -1,0 +1,6 @@
+UNIT TESTS
+
+Each test requests XHTML pages, parses them, and counts the number of results. 
+The browse test counts the number of results for each browse. 
+The search test counts the number of results for common searches.
+Be sure to test the advanced search thoroughly.

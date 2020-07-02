@@ -1,0 +1,28 @@
+/* I can't specify the sizes of things using top, bottom, left and right
+ * in ie6. Instead, I use css expressions to fake it. 
+ */
+#ead #sidebar {
+/*
+	height: expression(documentElement.clientHeight - 154 + 'px'); 
+	position: absolute;
+*/
+}
+
+/* in ie6, 
+ * top of sidebar is 88px from top.
+ * sidebar has 11px top padding.
+ * search box on bottom is 34px.
+ * text box height should be viewport height - (88 + 11 + 34)
+ * should be 134- why do I need 145?
+ */
+#ead #text {
+/*
+	height: expression(documentElement.clientHeight - 144 + 'px'); 
+	left: auto;	
+	position: absolute;
+	width: 66.666%;
+*/
+}
+div#textwrapper {
+	overflow: hidden;
+}

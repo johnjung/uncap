@@ -1,0 +1,131 @@
+/* 
+In IE7, the scrollbars in view.php flicker when the screen is being
+resized. Google "Flickering scrollbars with inner layout and IE7 to 
+find this thread:
+
+http://groups.google.com/group/jquery-ui-layout/browse_thread/thread/033ec67b901a8d57/b8e1f68803b09226
+
+They talk about this being unavoidable in IE7.
+
+IE6 usage is dropping sharply. Send a less fully functional version of
+the layout to IE6. No scrollbars- just scroll the whole page. 
+
+*/
+
+body {
+	bottom: 0px;
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+.contents {
+	margin: 0 10px;
+}
+#header {
+	height: 66px;
+	left: 10px;
+	position: absolute;
+	right: 11.111%;
+	top: 0px;
+}
+#search {
+	height: 110px;
+	left: 0px;
+	position: absolute;
+	top: 88px;
+	width: 22.222%;
+}
+#moreinformation {
+	left: 0px;
+	position: absolute;
+	top: 226px;
+	width: 22.222%;
+}
+#toc {
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 298px;
+	width: 22.222%;
+}
+#tocinner {
+	bottom: 0;
+	left: 0;
+	margin: 0 10px;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#text {
+	bottom: 0;
+	left: 22.222%;
+	overflow: auto;
+	padding-right: 11.111%;
+	position: absolute;
+	right: -10px;
+	top: 88px;
+}
+#toc a:hover,
+#toc a:active {
+	background-color: none;
+	text-decoration: underline;
+}
+#toc {
+	overflow: auto;
+}
+#toc li.active a:link,
+#toc li.active a:visited,
+#toc li.active a:hover,
+#toc li.active a:active {
+	background-color: #eae7e4;
+}
+
+#toc a.collapsed:link,
+#toc a.collapsed:visited,
+#toc a.collapsed:hover,
+#toc a.collapsed:active {
+	background: white url(../img/plus.gif) no-repeat 10px 6px;
+	text-indent: 18px;
+}
+#toc a.expanded:link,
+#toc a.expanded:visited,
+#toc a.expanded:hover,
+#toc a.expanded:active {
+	background: white url(../img/minus.gif) no-repeat 10px 6px;
+	text-indent: 18px;
+}
+#wrapper1 {
+	bottom: 0px;
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	width: auto; /* OPERA */
+}
+#wrapper2 {
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 88.888%;
+}
+html {
+	overflow: hidden;
+}
+
+/*
+ * EAD 
+ */
+
+.publisher {
+	padding-top: 66px;
+}
+
+div#itemnav {
+	float: left;
+	width: 25%;
+}
+

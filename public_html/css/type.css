@@ -1,0 +1,169 @@
+/*
+ * TYPOGRAPHY 
+ */
+
+a:link, a:visited, a:hover, a:active {
+	color: #115566; 
+}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+body#ead div#text a:link, 
+body#ead div#text a:visited {
+	text-decoration: underline;
+}
+body {
+	background: white url(../img/grid.gif) repeat-x;
+	font-family: Georgia, sans-serif;
+	line-height: 22px;
+}
+div.did {
+	margin-bottom: 22px;
+}
+em {
+	font-style: italic;
+}
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 44px;
+	line-height: 44px;
+	font-weight: bold;
+	margin: 11px 10px 33px 10px;
+	position: relative;
+	top: 12px;
+}
+h1 sub {
+	bottom: -22px;
+	color: #666;
+	font-size: 13.333px;
+	font-size: 14px;
+	font-weight: bold;
+	right: 0px;
+	line-height: 44px;
+	position: absolute;
+	text-align: left;
+	text-transform: lowercase;
+}
+h2 {
+	font-size: 28px;
+	font-weight: normal;
+	line-height: 33px;
+	margin: 0 10px 22px 10px;
+	position: relative;
+	top: 7px;
+} 
+h2#advancedsearchtitle {
+	margin-top: 10px;
+	position: static;
+}
+h3 {
+	font-size: 20px;
+	margin: 0 20px 22px 10px; 
+	position: relative;
+	top: 16.5px;
+}
+h3 img {
+	vertical-align: middle;
+}
+legend {
+	float: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	width: 33.33%;
+}
+li {
+	font-size: 15px;
+	margin: 0 10px;
+}
+ol {
+}
+ol#browse li {
+	margin: 0 .75em;
+}
+p {
+	font-size: 15px;
+	margin: 0 10px 22px 10px;
+}
+p.compact {
+	margin-bottom: 0;
+}
+td p,
+th p {
+	margin-bottom: 0;
+}
+.checkbox {
+	display: inline;
+	margin-left: 0;
+}
+table {
+	margin-left: 10px;
+}
+textarea {
+	display: block;
+	padding-left: 33.33%;
+}
+th {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+ul {
+	margin-bottom: 22px;
+}
+ul.bullets {
+	list-style-type: disc;
+	padding-left: 3em;
+}
+p.box {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 1em;
+}
+p.folder {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 2em;
+}
+p.note {
+	margin: 0;
+	padding-left: 3em;
+}
+p.othertype {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 1em;
+}
+p.unittitle {
+	margin: 0;
+	padding-left: 3em;
+}
+p.unitid {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding-left: 2em;
+}
+p.descriptivesummarylabel {
+	float: left;
+	font-weight: bold;
+	width: 200px;
+}
+div.series {
+	margin: 33px 0;
+}
+span.highlight {
+	background: #ffff66;
+	text-decoration: inherit;
+}
+

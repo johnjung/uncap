@@ -1,0 +1,166 @@
+body {
+	margin: 0 10px;
+}
+.contents {
+	margin: 0 10px 22px 10px;
+	zoom: 1; /* IE6 FIX */
+}
+#advancedsearchform fieldset {
+	border: 1px solid #bbb;
+	display: block;
+	margin-right: 100px;
+	padding: 15px;
+}
+#advancedsearchform input {
+	margin: 0;
+}
+#advancedsearchform label {
+	float: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	width: 33.33%;
+}
+#advancedsearchform label,
+#advancedsearchform legend {
+	left: -50%;
+	position:absolute;
+	top: 0;
+}
+#advancedsearchform legend {
+	font-weight: bold;
+}
+#advancedsearchform td {
+	padding-bottom: 22px;
+	width: 66.666%;
+}
+#advancedsearchform th {
+	padding-bottom: 22px;
+	vertical-align: top;
+	width: 33.333%;
+}
+#footer {
+	clear: both;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 44px 0 0 0;
+}
+#header {
+	height: 66px;
+	margin-bottom: 22px;
+	position: relative;
+}
+#header h1 {
+	bottom: 0;
+	left: 10px;
+	margin-left: 0;
+	position: absolute;
+}
+#header h1 a {
+	text-decoration: none;
+}
+#searchform input {
+	display: block;
+	margin: 0 auto;
+	width: 85%;
+}
+#sidebar {
+	display: inline; /* IE6 */
+	float: left;
+	width: 25%;
+}
+#sidebar a:link,
+#sidebar a:visited,
+#sidebar a:hover,
+#sidebar a:active {
+	display: block;
+	padding: 0 10px;
+}
+#sidebar a:hover,
+#sidebar a:active {
+	background: #f2f2f2;
+	background: #f7f6f5;
+	text-decoration: none;
+}
+#sidebar div {
+	font-family: Helvetica, Arial, serif;
+}
+#sidebar li {
+	border-bottom: 1px solid #fff;
+	font-size: 13px;
+	margin: 0;
+}
+#sidebar li div {
+	margin: 0;
+	padding: 0;
+}
+#sidebar li li {
+	font-size: 1em; /* keep from shrinking further... */
+}
+#sidebar p {
+	font-size: 13px;
+}
+#sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#textwrapper {
+	display: inline; /* IE6 */
+	float: left;
+	width: 75%;
+}
+#text {
+}
+#wrapper1 {
+	float: left;
+	width: 100%;
+}
+#wrapper2 {
+	float: left;
+	width: 88.888%;
+}
+html {
+	overflow: auto;
+}
+
+/*
+ * HOMEPAGE
+ */
+
+#about {
+	color: #003c4d;
+	font-size: 36px;
+	line-height: 1em;
+	margin-top: 0;
+}
+img#homepagephoto {
+	margin-top: 11px;
+	width: 100%;
+}
+
+/*
+ * STATIC PAGES QUICKLINKS
+ */
+
+div.quicklinks {
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 0 0 0 10px; /* 11px */
+}
+div.quicklinks h2 {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	position: static;
+}
+div.quicklinks li {
+	font-size: 13px;
+	margin: 0;
+}
+div.quicklinks ul {
+	list-style-type: disc;
+	margin: 0;
+	padding-left: 20px;
+}
+

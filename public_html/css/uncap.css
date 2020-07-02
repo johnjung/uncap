@@ -1,0 +1,143 @@
+/*
+ * NAVIGATION 
+ */
+
+ol {
+}
+
+#navigation {
+	bottom: -5px;
+	position: absolute;
+	left: 25%;
+	width: 75%;
+}
+#navigation ul {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	list-style-type: none;
+}
+#navigation li {
+	display: inline; /* IE HACK */
+	float: left;
+	margin: 0;
+	margin-left: -1px; /* IE HACK */
+	width: 33.33%;
+}
+#navigation a:link,
+#navigation a:visited,
+#navigation a:hover,
+#navigation a:active {
+	border-bottom: 5px solid #eae7e4;
+	display: block;
+	font-weight: bold;
+	margin: 0 10px;
+	text-decoration: none;
+}
+#navigation a:hover,
+#navigation a:active {
+	border-bottom: 5px solid #b4c2c4;
+}
+#home #navigation a#navhome,
+#collections #navigation a#navcollections,
+#institutions #navigation a#navinstitutions {
+	border-bottom: 5px solid #115566;
+	cursor: default;
+}
+
+#searchform input {
+	margin-top: 11px;
+}
+#searchform p {
+	margin: 0;
+	text-align: center;
+}
+#moreinformation p {
+	margin: 0;
+	text-align: center;
+}
+
+/*
+ * PLAIN SIDEBAR LINKS
+ */
+
+.plainsidebarlink,
+.plainsidebarlink {
+	color: #888;
+	display: block;
+}
+.plainsidebarlink a:hover,
+.plainsidebarlink a:active {
+	background: none ! important;
+	text-decoration: underline ! important;
+}
+
+#sidebar a:link,
+#sidebar a:visited,
+#sidebar a:hover,
+#sidebar a:active {
+	display: block;
+	padding: 0 10px;
+}
+#sidebar a:hover,
+#sidebar a:active {
+	background: #f2f2f2;
+	background: #f7f6f5;
+	text-decoration: none;
+}
+#sidebar div {
+	font-family: Helvetica, Arial, serif;
+}
+
+/* outer div */
+#sidebar .bgse {
+	background: #eae7e4 url(../img/sidebarbgse.gif) no-repeat right bottom;
+	margin: 0 10px 20px 10px;
+}
+/* inner div */
+#sidebar .bgsw {
+	background: transparent url(../img/sidebarbgsw.gif) no-repeat left bottom;
+	padding-bottom: 10px;
+}
+/* outer div */
+#sidebar .bgne {
+	background: transparent url(../img/sidebarbgne.gif) no-repeat right top;
+}
+/* inner h2 */
+#sidebar .bgnw {
+	background: transparent url(../img/sidebarbgnw.gif) no-repeat left top;
+}
+#sidebar h2 {
+	border-bottom: 1px solid #fff;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0;
+	padding: 0 15px;
+	top: 0;
+}
+#sidebar li {
+	border-bottom: 1px solid #fff;
+	font-size: .8125em; /* 13px */
+	margin: 0;
+}
+#sidebar li div {
+	margin: 0;
+	padding: 0;
+}
+#sidebar li li {
+	font-size: 1em; /* keep from shrinking further... */
+}
+#sidebar p {
+	font-size: .8125em; /* 13px */
+}
+#sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#searchform input {
+	display: block;
+	margin: 0 auto;
+	width: 85%;
+}
+
