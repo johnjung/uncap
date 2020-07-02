@@ -329,7 +329,10 @@ if ($clean['q'] != '') {
 
 	$xp = new XSLTProcessor();
 	$xp->importStyleSheet($xsl);
-	$xp->setParameter('', 'exactphrase', $clean['exactphrase']);
+
+    if (array_key_exists('exactphrase', $clean)) {
+	    $xp->setParameter('', 'exactphrase', $clean['exactphrase']);
+    }
 	$xp->setParameter('', 'q', $clean['q']);
 
 	$SEARCH = $xp->transformToXML($xml);

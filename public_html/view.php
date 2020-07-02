@@ -18,6 +18,10 @@ $URL = array();
 foreach ($clean as $k => $v) 
 	$URL[$k] = urlencode($clean[$k]);
 
+if (!(array_key_exists('q', $URL))) {
+    $URL['q'] = '';
+}
+
 $x = fopen(sprintf('%s/request.xqy?action=get&format=raw-xml&eadid=%s&q=%s', $MARKLOGIC, $URL['eadid'], $URL['q']), 'rb');
 $xmlstring = stream_get_contents($x);
 fclose($x);
@@ -44,7 +48,10 @@ $xsl->load('xslt/view.xsl');
 $xp = new XSLTProcessor();
 $xp->importStyleSheet($xsl);
 $xp->setParameter('', 'eadid', $clean['eadid']);
-$xp->setParameter('', 'q', $clean['q']);
+
+if (array_key_exists('q', $clean)) {
+    $xp->setParameter('', 'q', $clean['q']);
+}
 
 $EAD = $xp->transformToXML($xml);
 ?>
