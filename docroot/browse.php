@@ -8,19 +8,13 @@ include 'config.php';
 $clean = array();
 $clean['browse'] = 'collection/UNCAP';
 if (isset($_GET['browse'])) {
-	switch ($_GET['browse']) {
-		case 'collection/chicago jazz archive':
-		case 'collection/modern poetry':
-		case 'collection/UNCAP':
-		case 'institution/chicago defender':
-		case 'institution/dusable':
-		case 'institution/Northwestern University':
-		case 'institution/sscac':
-		case 'institution/University of Chicago':
-		case 'institution/vivian g harsh':
-		case 'project/MTS':		
-		case 'project/NWU':		
-		case 'project/SCRC':		
+    if (in_array($_GET['browse'], array('bronzeville', 'cbmr', 'chm',
+        'columbia', 'cookcty', 'csu', 'cyc', 'defender', 'depaul',
+        'du', 'dusable', 'ehc', 'eta', 'gerhart', 'harsh', 'hwlc',
+        'iit', 'ilhs', 'isdsa', 'kart', 'lake', 'lanetech', 'lbp',
+        'loyola', 'malcolmx', 'neiu', 'newberry', 'northpark', 'nu',
+        'pshs', 'roosevelt', 'rush', 'shorefront', 'spertus', 'sscac',
+        'taylor', 'uic', 'uoc', 'werner'))) {
 			$clean['browse'] = $_GET['browse'];
 			break;
 	}
@@ -52,15 +46,9 @@ function getsnippet($url, $institutions=True) {
  * LOAD AND TRANSFORM MARKLOGIC XML
  */
 
-if ($clean['browse'] == 'institution/University of Chicago') {
-	$str = file_get_contents($MARKLOGIC . "/admin/gimmeSCRC_UNCAP.xqy");
-} else if ($clean['browse'] == 'institution/Northwestern University' || $clean['browse'] == 'project/NWU') {
-	$str = file_get_contents($MARKLOGIC . "/admin/gimmeNWU_UNCAP.xqy");
-} else {
-	$str = file_get_contents(
-		sprintf($MARKLOGIC . "/admin/gimme2.xqy?collection=%s", urlencode($clean['browse']))
-	);
-}
+$str = file_get_contents(
+	sprintf($MARKLOGIC . "/admin/gimme2.xqy?collection=%s", urlencode($clean['browse']))
+);
 
 $str = str_replace(' xmlns="urn:isbn:1-931666-22-9"', '', $str);
 

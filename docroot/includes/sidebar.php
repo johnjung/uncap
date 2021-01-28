@@ -33,28 +33,19 @@ $ALLFINDINGAIDS = $xp->transformToXML($xml);
 
 <div class="bgse">
 <div class="bgsw">
-<div class="bgne"><h2 class="bgnw">Browse by Institution</h2></div>
+<div class="bgne"><h2 class="bgnw">Browse by Collection</h2></div>
 
 <ul>
-<li><a href="/browse.php?browse=institution/chicago+defender">Chicago Defender</a></li>
-<li><a href="/browse.php?browse=institution/dusable">DuSable Museum of African American History</a></li>
-<li><a href="/browse.php?browse=institution/vivian+g+harsh">Chicago Public
-Library, Carter G. Woodson Regional Library, Vivian G. Harsh Research Collection of
-Afro-American History and Literature</a></li>
-<li><a href="/browse.php?browse=institution/Northwestern+University">Northwestern University</a></li>
-<li><a href="/browse.php?browse=institution/sscac">South Side Community Art Center</a></li>
-<li><a href="/browse.php?browse=institution/University+of+Chicago">University of Chicago</a></li>
-</ul>
-</div>
-</div>
-
-<div class="bgse">
-<div class="bgsw">
-<div class="bgne"><h2 class="bgnw">Browse All Finding Aids</h2></div>
-
-<ul>
-<?php print $ALLFINDINGAIDS; ?>
-<li><a href="/browse.php">more ...</a></li>
+<?php foreach (array('bronzeville', 'cbmr', 'chm', 'columbia',
+                     'cookcty', 'csu', 'cyc', 'defender', 'depaul',
+                     'du', 'dusable', 'ehc', 'eta', 'gerhart', 'harsh',
+                     'hwlc', 'iit', 'ilhs', 'isdsa', 'kart', 'lake',
+                     'lanetech', 'lbp', 'loyola', 'malcolmx', 'neiu',
+                     'newberry', 'northpark', 'nu', 'pshs', 'roosevelt',
+                     'rush', 'shorefront', 'spertus', 'sscac', 'taylor',
+                     'uic', 'uoc', 'werner') as $collection) { ?>
+    <li><a href="/browse.php?browse=<?=$collection?>"><?=$collection?></a></li>
+<?php } ?>
 </ul>
 </div>
 </div>
