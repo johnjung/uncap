@@ -25,43 +25,19 @@
 <xsl:choose>
 	<xsl:when test="$eadid = 'MTS.calloway' or
                         $eadid = 'MTS.defender-individuals' or
-	                $eadid = 'MTS.defender-organizations'"><img alt="Chicago Public Library" src="/img/chicagopubliclibrarysmall.gif"/></xsl:when>
+	                $eadid = 'MTS.defender-organizations'">
+                  <img alt="Chicago Public Library" src="/img/chicagopubliclibrarysmall.gif"/></xsl:when>
 
-	<xsl:when test="$eadid = 'MTS.davis' or
-	                $eadid = 'MTS.dunmore' or
-	                $eadid = 'MTS.movingimage' or
-	                $eadid = 'MTS.rollins'"><img alt="DuSable Museum of African American History" src="/img/dusablesmall.gif"/></xsl:when>
+	<xsl:when test="substring($eadid,2,7) = 'DUSABLE'"><img alt="DuSable Museum of African American History" src="/img/dusablesmall.gif"/></xsl:when>
 
-	<xsl:when test="$eadid = 'MTS.abbottsengstacke' or
-	                $eadid = 'MTS.allen' or
-	                $eadid = 'MTS.barnett' or
-	                $eadid = 'MTS.browning' or
-	                $eadid = 'MTS.burns' or
-	                $eadid = 'MTS.colter' or
-	                $eadid = 'MTS.core' or
-	                $eadid = 'MTS.commodore' or
-	                $eadid = 'MTS.dickerson' or
-	                $eadid = 'MTS.dungill' or
-	                $eadid = 'MTS.durham' or
-	                $eadid = 'MTS.dyett' or
-	                $eadid = 'MTS.hallbranch' or
-	                $eadid = 'MTS.heritage' or
-	                $eadid = 'MTS.jones' or
-	                $eadid = 'MTS.minor' or
-	                $eadid = 'MTS.morris' or
-	                $eadid = 'MTS.motley' or
-	                $eadid = 'MTS.path' or
-	                $eadid = 'MTS.sncc' or
-	                $eadid = 'MTS.stone' or
-	                $eadid = 'MTS.walton' or
-	                $eadid = 'MTS.wilson' or
-	                $eadid = 'MTS.wyatt'"><img alt="Chicago Public Library" src="/img/chicagopubliclibrarysmall.gif"/></xsl:when>
+		<xsl:when test="substring($eadid,2,5) = 'HARSH'">
+      <img alt="Chicago Public Library" src="/img/chicagopubliclibrarysmall.gif"/></xsl:when>
 
-	<xsl:when test="substring($eadid,1,3) = 'inu'">
+	<xsl:when test="substring($eadid,2,2) = 'NU'">
 	  <img alt="Northwestern University Library" src="/img/northwesternsmall.gif"/>
 	</xsl:when>
 
-	<xsl:when test="$eadid = 'MTS.sscac'"><img alt="South Side Community Art Center" src="/img/sscacsmall.gif"/></xsl:when>
+	<xsl:when test="$eadid = 'BMRC.SSCAC.SSCAC'"><img alt="South Side Community Art Center" src="/img/sscacsmall.gif"/></xsl:when>
 
 	<xsl:otherwise><img alt="University of Chicago Library" src="/img/universityofchicagolibrarysmall.gif"/></xsl:otherwise>
 </xsl:choose>

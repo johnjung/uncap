@@ -3,11 +3,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>UNCAP</title>
+<title>PORTAL</title>
 <?php include "includes/headstatic.php"; ?>
 <style type="text/css">
 .alert {
-background: #fef3d6; 
+background: #fef3d6;
 border: 1px solid #ccc;
 float: right;
 margin: 0 10px 10px 10px;
@@ -37,9 +37,9 @@ top: 3px;
 <!--TEXT-->
 <div id="textwrapper">
 
-<p><img alt="A tall stack of papers neatly organized into folders." id="homepagephoto" src="img/folders.jpg"/></p>
+<p><img alt="A street filled with African Americans celebrating Juneteenth in the 1940s." id="homepagephoto" src="img/Juneteenth_UChicagoNews_Prof Saville.png"/></p>
 
-<h2 id="about">UNCAP (Uncovering Chicago Archives Project) is a model for discovering primary sources across collections and institutions.</h2>
+<h2 id="about">The BMRC (Black Metropolis Research Consortium) Portal is an inclusive, interactive space for discovering primary sources across collections and institutions that document Black experiences in Chicago and beyond.</h2>
 
 <?php include "includes/description.html"; ?>
 
