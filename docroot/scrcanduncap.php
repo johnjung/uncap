@@ -20,7 +20,7 @@ $docs = array();
 foreach ($uncap->getElementsByTagName('div') as $div) {
 	$id = $div->getElementsByTagName('span')->item(0)->nodeValue;
 	$title = $div->getElementsByTagName('span')->item(1)->nodeValue;
-	if (!array_key_exists($id, $docs)) {
+	if (!isset($docs[$id])) {
 		$docs[$id] = array(
 			'title' => $title,
 			'uncap' => '',
@@ -33,7 +33,7 @@ foreach ($uncap->getElementsByTagName('div') as $div) {
 foreach ($scrc->getElementsByTagName('div') as $div) {
 	$id = $div->getElementsByTagName('span')->item(0)->nodeValue;
 	$title = $div->getElementsByTagName('span')->item(1)->nodeValue;
-	if (!array_key_exists($id, $docs)) {
+	if (!isset($docs[$id])) {
 		$docs[$id] = array(
 			'title' => $title,
 			'uncap' => '',

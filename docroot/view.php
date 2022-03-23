@@ -18,7 +18,7 @@ $URL = array();
 foreach ($clean as $k => $v) 
 	$URL[$k] = urlencode($clean[$k]);
 
-if (!(array_key_exists('q', $URL))) {
+if (!(isset($URL['q']))) {
     $URL['q'] = '';
 }
 
@@ -28,7 +28,7 @@ fclose($x);
 
 $xmlstring = str_replace(' xmlns="urn:isbn:1-931666-22-9"', '', $xmlstring);
 
-if (array_key_exists('xml', $clean))
+if (isset($clean['xml']))
 	die($xmlstring);
 
 $xml = new DOMDocument();
@@ -49,7 +49,7 @@ $xp = new XSLTProcessor();
 $xp->importStyleSheet($xsl);
 $xp->setParameter('', 'eadid', $clean['eadid']);
 
-if (array_key_exists('q', $clean)) {
+if (isset($clean['q'])) {
     $xp->setParameter('', 'q', $clean['q']);
 }
 

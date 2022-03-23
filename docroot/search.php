@@ -254,7 +254,7 @@ if ($clean['q'] != '') {
 		 * Exact-phrase non-fielded search.
 		 */
 
-		if (array_key_exists("exactphrase", $clean)) {
+		if (isset($clean["exactphrase"])) {
 			$f = sprintf("%s/request.xqy?action=search&q=%%22%s%%22", $MARKLOGIC, urlencode($clean['q']));
 		} else {
 
@@ -275,7 +275,7 @@ if ($clean['q'] != '') {
 		 * Exact-phrase fielded searches.
 		 */
 
-		if (array_key_exists("exactphrase", $clean)) {
+		if (isset($clean["exactphrase"])) {
 			$f = sprintf("%s/request.xqy?action=search&field=%s%%3a%s", 
 				$MARKLOGIC,
 				urlencode($clean['field']), 
@@ -309,7 +309,7 @@ if ($clean['q'] != '') {
 	
 	$str = str_replace(' xmlns="urn:isbn:1-931666-22-9"', '', $str);
 
-	if (array_key_exists('xml', $clean)) 
+	if ($clean['xml']) 
 		die($str);
 
 	$xml = new DOMDocument();
@@ -330,7 +330,7 @@ if ($clean['q'] != '') {
 	$xp = new XSLTProcessor();
 	$xp->importStyleSheet($xsl);
 
-    if (array_key_exists('exactphrase', $clean)) {
+    if (isset($clean['exactphrase'])) {
 	    $xp->setParameter('', 'exactphrase', $clean['exactphrase']);
     }
 	$xp->setParameter('', 'q', $clean['q']);
